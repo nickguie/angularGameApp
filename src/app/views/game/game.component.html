@@ -1,7 +1,8 @@
 <h2>My GAMES</h2>
 <ul>
-  <li *ngFor="let game of games">
+  <li *ngFor="let game of games" (click)="edit(game)">
     {{game.name}} - {{game.status}}
+    <button (click)="remove(game.id)">X</button>
   </li>
 </ul>
 
@@ -10,4 +11,10 @@
   <input type="text" placeholder="Genero"  [(ngModel)]="selectedGame.genre">
   <input type="text" placeholder="Plataforma"  [(ngModel)]="selectedGame.platform">
   <input type="text" placeholder="Status"  [(ngModel)]="selectedGame.status">
+
+  <button (click)="save();">Salvar</button>
 </div>
+
+<br><br>
+<button (click)="newGame()">Novo Jogo</button>
+
