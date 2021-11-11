@@ -6,10 +6,18 @@ body{
   background-image: linear-gradient(to left top,
    #c90073, #ba248b, #a6399f, #8c49af, #6c56b9,
     #7b55b9, #8954b9, #9752b8, #ca3d9f, #eb2e79, #f93c4c, #f25e10);
+    color: white;
+    text-align: center;
+
 }
 
 button{
   border-radius: 10px;
   background-color: #eb2e79;
   color: white;
+  
+}
+
+ul{
+  list-style: none;
 }

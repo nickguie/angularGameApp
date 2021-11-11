@@ -1,8 +1,10 @@
 <h2>My GAMES</h2>
 <ul>
   <li *ngFor="let game of games" (click)="edit(game)">
-    {{game.name}} - {{game.status}}
+  Jogo: {{game.name}} - Gênero: {{game.genre}} - Plataforma: {{game.platform}}
+   - Status: {{game.status}}
     <button (click)="remove(game.id)">X</button>
+    <br><br>
   </li>
 </ul>
 
